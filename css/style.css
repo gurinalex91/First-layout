@@ -1,0 +1,1565 @@
+/*fonts*/
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/*reset*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+/*main*/
+	.clearfix:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.wrapper{
+		width: 1140px;
+		margin: 0 auto;
+	}
+	html, body{
+		scroll-behavior: smooth;
+	}
+/*header*/
+	header{
+		background: #000;
+		position: relative;
+		z-index: 5;
+	}
+	header:before{
+		content: '';
+		width: 55vw;
+	    height: 90px;
+	    background: linear-gradient(to right, #171213, #0d0a0b);
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+    }
+	
+	.head{
+		position: relative;
+		background: url('../images/sportivnyy-klub-sportivnye-sekcii-v-hnure-sekciya-tyazhelaya-atletika.png') no-repeat -50px 0;
+		
+	}
+	.logo>span{
+		color: #fff;
+		font-family: "Raleway", sans-serif;
+		font-size: 24px;
+		font-weight: 800;
+		text-transform: uppercase;
+		vertical-align: middle;
+	}
+	.logo>img{
+		margin: 0 17px 0 0;
+		vertical-align: middle;
+	}
+	.logo{
+		padding-top: 38px;
+	}
+	.bg_text{
+		background: url(../images/vector.png) no-repeat;
+		height: 325px;
+		width: 383px;
+		margin: 86px 0 0 -42px;
+		float: left;
+		padding-bottom: 120px;
+	}
+	.raleway{
+		color: #ffffff;
+		font-family: "Raleway", sans-serif;
+		font-size: 72px;
+		font-weight: 800; 
+		text-transform: uppercase;
+		padding-left: 44px;
+    	padding-top: 83px;
+		letter-spacing: -2.92px; 
+	}
+	.roboto{
+		color: #ffffff;
+		font-family: "Roboto", sans-serif;
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding-left: 45px;
+		letter-spacing: 3.3px; 
+	}
+
+	.decoration{
+		width: calc(100vw - 18px);
+		height: 30px;
+		background: #af1c1a;
+		transform: rotate(-5.5deg) skew(-5deg);
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		box-shadow: -5px 10px 10px;
+		z-index: 15;
+	}
+	.decoration:before{
+		content: '';
+		width: 63vw;
+		height: 20px;
+		background: #af1c1a;
+		transform: skew(50deg);
+		position: absolute;
+		bottom: 40px;
+		right: 19px;
+	}
+	.decoration:after{
+		content: '';
+		width: 99vw;
+		height: 80px;
+		background: #af1c1a;
+		transform: skew(59deg);
+		position: absolute;
+		bottom: 0;
+		left: -65%;
+	}
+	.header_text{
+		width: 232px;
+		color: #fff;
+		font-family: "Raleway", sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		/*letter-spacing: 0.75px;*/
+		float: right;
+		margin: 180px 39px 0 0;
+	}
+	.header_button{
+		display: block;
+		float: right;
+		background-color: #af1c1a;
+		color: #fff;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+		text-decoration: none;
+		padding: 12px 25px;
+		margin: 25px 110px 0 0;
+	}
+	.header_button:hover{
+		background: #fff;
+		outline: 2px solid #af1c1a;
+		color: #af1c1a;
+	}
+	
+/*section about_ us*/
+	.about_us {
+		background-image: linear-gradient(-24deg, #000000 0%, #20191b 100%);
+		position: relative;
+		font-size: 0;
+		overflow: hidden;
+		padding-bottom: 160px;
+	}
+	.about_us:after{
+		content: '';
+		width: 0;
+	    height: 0;
+	    border-bottom: 350px solid #af1c1a;
+	    border-right: 100vw solid transparent;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	}
+	nav{
+		font-size: 0;
+		text-align: right;
+		margin-bottom: 157px;
+		padding: 8px 12px 0 0;
+	}
+	nav li{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	nav li:last-child{
+		margin-right: 0;
+	}
+	nav a{
+		color: #fff;
+		font-family: "Roboto", sans-serif;
+		font-size: 14px;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	nav a:hover{
+		color: #a6aeb7;
+	}
+	.h2_pos{
+		position: relative;
+		padding-left: 86px;
+	}
+	.about_us h2{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.75px;
+		transform: rotate(-90deg);
+		position: absolute;
+		left: 0;
+		top: 58%;
+		margin:0 0 0 -68px;
+	}
+	.about_us_gallery{
+		width: 540px;
+		position: relative;
+		z-index: 5;
+		display: inline-block;
+	}
+	.additional_images li{
+		display: inline-block;
+		margin-right: 30px;
+	}
+	.additional_images li:last-child{
+		margin-right: 0;
+	}
+	.about_us_gallery .first_image{
+		margin-right: 0;
+	}
+	.first_image{
+		margin-bottom: 30px;
+	}
+	.about_us_discription{
+		display: inline-block;
+		width: 445px;
+		margin-left: 30px;
+		vertical-align: top;
+	}
+	.about_us h3{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		vertical-align: top;
+		margin-bottom: 30px;
+	}
+	.about_us p{
+		display: inline-block;
+		color: #ffffff;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		vertical-align: top;
+		width: 445px;
+		margin-bottom: 15px;
+		line-height: 1.13;
+	}
+	
+	
+/*section gallery*/
+	.gallery {
+		background-image: linear-gradient(to top, #8f1715 0%, #af1c1a 100%);
+		position: relative;
+		text-align: center;
+	}
+	.gallery:after{ 
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 0;
+	    height: 0;
+	    border-left: calc(50vw - 10px) solid transparent;
+	    border-right: calc(50vw - 10px) solid transparent;
+	    border-top: 67px solid #8f1715;
+	    z-index: 15;
+	}
+	.flex{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.gallery_main_image{
+		display: block;
+		margin-bottom: 30px;
+	}
+	.gallery_images{
+		margin: 0 30px;
+		font-size: 0;
+	}
+	.gallery_images img{
+		margin-right: 30px;
+	}
+	.gallery_images img:first-child, .gallery_images img:last-child{
+		margin-right: 0;
+	}
+	.arrow_left{
+		width: 40px;
+		height: 40px;
+		border: 2px solid #fff;
+		position: relative;
+	    display: block;
+	    margin-bottom: 134px;
+
+	}
+	.arrow_left:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 50%;
+		margin: -9px -12px 0 0;
+		width: 15px;
+		height: 15px;
+		border-left: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		transform: rotate(45deg);
+	}
+
+	.arrow_right{
+		display: block; 
+		width: 40px;
+		height: 40px;
+		border: 2px solid #fff;
+		position: relative;
+		margin-bottom: 134px;
+	}
+	.arrow_right:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -9px 0 0 -12px;
+		width: 15px;
+		height: 15px;
+		border-right: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		transform: rotate(-45deg);
+	}
+	.gallery h2{
+		position: absolute;
+		right: 0;
+		top: 39%;
+		color: #fff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.75px;
+		transform: rotate(90deg);
+	}
+	.h2_pos_right{
+		padding-right: 86px;
+	}
+	
+/*section schedule*/
+	.schedule {
+		background-image: radial-gradient(circle 864px at center, #20191b 0%, #000000 100%);
+		position: relative;
+		padding-bottom: 90px;
+	}
+	.left_pic{
+		width: 480px;
+		background: url(../images/Join_1.png) -75px 0;
+		position: relative;
+		padding-bottom: 390px;
+	}
+	.left_pic:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -40px;
+		width: calc(50vw - 200px);
+		height: 60px;
+		background: #af1c1a;
+		box-shadow: 0 10px 10px;
+	}
+	.right_pic{
+		width: 480px;
+		background: url(../images/Join_2.png) no-repeat;
+		position: relative;
+	}
+	.right_pic:before{
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: -40px;
+		width: calc(50vw - 200px);
+		height: 60px;
+		background: #af1c1a;
+		box-shadow: -5px 10px 10px;
+	}
+	.schedule_text{
+		text-align: center;
+		margin: 157px 0 0;
+    	line-height: 1.2;
+	}
+	.schedule_text p{
+		color: #fff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+	.schedule_text h3{
+		color: #ffffff;
+		font-family: "Raleway - Extra Bold", sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.8px;
+	}
+	.schedule_text a{
+		display: inline-block;
+		background-color: #af1c1a;
+		color: #fff;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+		text-decoration: none;
+		padding: 10px 23px;
+   		margin-top: 19px;
+	}
+	.group_clases{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		position: absolute;
+		bottom: 61%;
+		left: calc(50% - 93px);
+		
+	}
+	.schedule_top{
+		margin-bottom: 66px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.schedule_bottom{
+		margin: 30px auto;
+	}
+	.week{
+		font-size: 0;
+		text-align: center;
+		margin-left: -150px;
+	}
+	.week li{
+		display: inline-block;
+		font-size: 16px;
+		margin-right: 70px;
+	}
+	.week a{
+		display: block;
+		text-decoration: none;
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+	._active a{
+		font-weight: 700;
+	}
+	.schedule_bottom h2{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.75px;
+		transform: rotate(-90deg);
+		position: absolute;
+	    left: 0;
+	    top: 43%;
+	    margin: 0 0 0 -70px;
+	}
+	.timetable{
+		font-size: 0;
+	}
+	.timing{
+		width: 570px;
+		font-size: 0;
+		display: inline-block;
+		margin-top: 12px;
+    	vertical-align: top;
+	}
+	.timing ul{
+		font-size: 0;
+	}
+	.timing li{
+		width: 255px;
+		height: 60px;
+		background-color: #b8b2b2;
+		margin: 15px 30px 0 0;
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+		color: #000000;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		
+	}
+	.big_number{
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 19px 0 19px 20px;
+		display: inline-block;
+	}
+	.little_number{
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		vertical-align: top;
+		margin: 19px 15px 19px 0;
+	    display: inline-block;
+	}
+	.recommend{
+		height: 135px;
+		background: linear-gradient(#af1c1a, #8f1715);
+		font-size: 0;
+	}
+	/*calendar*/
+	.today_date{
+		display: inline-block;
+		padding: 20px;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		color: #fff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 30px 40px;
+		float: left;
+	}
+	.recommend_today {
+		display: inline-block;
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		font-weight: 700;					
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		float: left;
+		margin-top: 26px;
+		line-height: 1.2;
+		width: 120px;
+	}
+	.recommend_today:last-child{
+		margin-top: 0;
+	}
+	.stretching {
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		float: left;
+		margin-top: 4px;
+	}
+	
+		.calendar{
+			width: 350px;
+			display: inline-block;
+			margin: 27px 0 0 95px;
+		}
+		.month {
+		    padding: 29px 0 26px;
+		    width: 350px;
+		    background: #481c1c;
+		    text-align: center;
+		}
+
+		.month ul {
+		    margin: 0;
+		    padding: 0;
+		}
+
+		.month ul li {
+		    color: #fff;
+		    font-size: 16px;
+		    font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+		    
+		}
+
+		.month .prev {
+		    float: left;
+		    margin-left: 30px;
+		    
+		}
+
+		.month .next {
+		    float: right;
+		    margin-right: 30px;
+		}
+
+		.weekdays {
+		    padding: 0 30px;
+		    background-color: #481c1c;
+		    
+		}
+
+		.weekdays li {
+		    display: inline-block;
+		    width: 13.9%;
+		    color: #fff;
+		    text-align: center;
+		    font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+		}
+
+		.days {
+		    padding: 0 30px 30px;
+		    background: #481c1c;
+		}
+
+		.days li {
+		    display: inline-block;
+		    width: 17px;
+		    text-align: center;
+		    margin-bottom: 5px;
+		    font-size:16px;
+		    font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+		    color: #fff;
+		    padding: 5px 12px 0;
+		}
+
+		.days .active {
+		    padding: 5px;
+		    background: #af1c1a;
+		    border-radius: 50%;
+		    margin: 7px 8px 0;
+		}
+
+/*section price*/
+	.price {
+		padding-bottom: 52px;
+		background-image: linear-gradient(to top, #8f1715 0%, #af1c1a 100%);
+		position: relative;
+		text-align: center;
+		font-size: 0;
+	}
+	.price:before{ 
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		width: 0;
+	    height: 0;
+	    border-left: calc(50vw - 10px) solid transparent;
+	    border-right: calc(50vw - 10px) solid transparent;
+	    border-bottom: 80px solid #ad1c1a;
+	    z-index: 5;
+	}
+	.price:after{
+		content: '';
+		width: 0;
+	    height: 0;
+	    border-top: 200px solid #8f1715;
+	    border-right: 99vw solid transparent;
+	    position: absolute;
+	    left: 0;
+	    top: 100%;
+	    z-index: 10;
+	    
+	}
+	.price h2{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 36px 0 55px 0;
+	}
+	.box_size{
+		width: 350px;
+	}
+	.line_one{
+		padding: 30px 0;
+	}
+	.line_two{
+		padding: 16px 0;
+	}
+
+	.top_box{
+		background: #481c1c;
+		position: relative;
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 1.2;
+	}
+
+	.top_box:before{
+		content: '';
+		position: absolute;
+		top: 100%;
+		left: 40px;
+		width: 0;
+	    height: 0;
+	    border-left: 12px solid transparent;
+	    border-right: 12px solid transparent;
+	    border-top: 18px solid #481c1c;
+	}
+	.bottom_box{
+		background: #b8b2b2;
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.box_position{
+		display: inline-block;
+		font-size: 16px;
+		margin: 0 30px 0 0;
+		box-sizing: border-box;
+	}
+	.bottom_box p{
+		vertical-align: middle;	/*Не могу выровнять по вертикали*/
+	}
+	.shadow{
+		width: 100vw;
+    	height: 10px;
+   		background: transparent;
+		box-shadow: 0 10px 10px;
+		position: absolute;
+		transform: rotate(-6deg);
+	    top: 125%;
+	    left: -14px;
+	    z-index: 10;
+	}
+/*section team*/
+	.team {
+		padding-bottom: 140px;
+		background-image: linear-gradient(-114deg, #000000 0%, #20191b 100%);
+		position: relative;
+		box-shadow: -5px 8px 7px rgba(0, 0, 1, 0.75);
+		z-index: 5;
+		overflow: hidden;
+	}
+	.team h2{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 30px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 0.75px;
+		transform: rotate(-90deg);
+		position: absolute;
+	    left: 0;
+	    top: 52%;
+	    margin-left: -30px;
+	    
+	}
+	.text_position{
+		padding-top: 301px;
+	}
+	.description{
+		width: 540px;
+		padding-bottom: 15px;
+		background: radial-gradient(#a01917, #8f1715);
+		float: left;
+		position: relative;
+		z-index: 5;
+	}
+	.description h3{
+		color: #ffffff;
+		font-family: 'Raleway', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		margin: 27px 0 24px 30px;
+	}
+	.description p{
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.08px;
+		margin-left: 27px;
+		width: 437px;
+		line-height: 1.2;
+	}
+	.indent{
+		margin-top: 6px;
+	}
+	p.other_style{
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.45px;
+		margin: 11px 0 9px 30px;
+	}
+	.team_circle{
+		width: 15px;
+		height: 15px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		position: relative;
+	}
+	.arrow_up:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -2px 0 0 -3px;
+	    width: 5px;
+	    height: 5px;
+	    border-right: 1px solid #fff;
+	    border-bottom: 1px solid #fff;
+	    transform: rotate(225deg);
+	}
+	.arrow_down:before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -4px 0 0 -3px;
+	    width: 5px;
+	    height: 5px;
+	    border-right: 1px solid #fff;
+	    border-bottom: 1px solid #fff;
+	    transform: rotate(45deg);
+	}
+	.team_scroll{
+		position: absolute;
+	    top: 50%;
+	    margin: -25px 30px 0 0;
+	    right: 0;					
+	}
+	.arrow_up{
+		position: absolute;
+	    bottom: 100%;
+	    right: -6px;
+	}
+	.arrow_down{
+		position: absolute;
+		bottom: -25px;
+		right: -6px;
+	}
+	.team_scroll span{
+		color: #fff;
+		font-weight: 700;
+
+	}
+	.team_image{
+		margin-left: -160px;
+    	margin-top: -190px;
+	    float: left;
+	}
+	.team .arrow_left{
+		position: absolute;
+		bottom: -73px;
+		left: 35%; 
+		margin-bottom: 0;
+	}
+	.team .arrow_right{
+		position: absolute;
+		bottom: -73px;
+		right: 38%; 
+		margin-bottom: 0;
+	}
+/*section form*/
+	.form{
+		background: url(../images/9007199260917911_f2b0.jpg) no-repeat center/cover, #000;
+	}
+	.form .wrapper{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.form_box{
+		margin: 0 auto;
+		width: 730px;
+		padding-bottom: 60px;
+		background-image: linear-gradient(to top, #8f1715 0%, #af1c1a 100%);
+		position: relative;
+		padding-top: 87px;
+		box-sizing: border-box;
+	}
+	.form_box:before{
+		content: '';
+		position: absolute;
+		top: 100%;
+	    left: 0;
+	    width: 0;
+	    height: 0;
+	    border-left: 365px solid transparent;
+	    border-right: 365px solid transparent;
+	    border-top: 60px solid #8f1715;
+	    z-index: 5;
+	}
+	.slim{
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: 0.3px;
+	}
+	.bold{
+		color: #ffffff;
+		font-size: 30px;
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		margin-top: 7px;
+	}
+	form{
+		font-size: 0;
+		margin-bottom: 34px;
+	}
+	.form textarea{
+		width: 540px;
+		height: 75px;
+		resize: none;
+		margin: 15px auto;
+		box-sizing: border-box;
+	}
+	.form input[type="text"], input[type="email"]{
+		width: 255px;
+		padding: 6px 0;
+   		margin: 40px 30px 0 0;
+		display: inline-block;
+		box-sizing: border-box;
+	}
+	.form input[type="email"]{
+		margin: 40px 0 0 0;
+	}
+	.form input[type="submit"]{
+		display: block;
+		margin: 0 auto;
+		width: 115px;
+		padding: 9px 0;
+		background: transparent;
+		border: 2px solid #fff;
+		cursor: pointer;
+		color: #fefefe;
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.35px;
+	}
+	::-webkit-input-placeholder{
+		color: #696565;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		font-style: italic;
+		padding-left: 9px;
+	}
+	::-moz-placeholder{
+		color: #696565;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		font-style: italic;
+		padding-left: 9px;
+	}
+	:-ms-input-placeholder{
+		color: #696565;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		font-style: italic;
+		padding-left: 9px;
+	}
+	:focus::-webkit-input-placeholder{
+		color: transparent
+	}
+	:focus::-moz-placeholder{
+		color: transparent
+	}
+	:focus:-moz-placeholder{
+		color: transparent
+	}
+	:focus:-ms-input-placeholder{
+		color: transparent
+	}
+	.contacts{
+		color: #ffffff;
+		font-family: "Roboto", sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.16px;
+		margin: 0 42px 0 0;
+		text-align: left;
+		display: inline-block;
+		vertical-align: middle;
+		width: 235px;
+	}
+	.contacts .adress{
+		min-width: 186px;
+		padding-left: 60px;
+		position: relative;
+		margin-bottom: 35px;
+	}
+	.adress:before{
+		content: '';
+		position: absolute;
+		top: calc(50% - 22px);
+		left: 0;
+		width: 45px; 
+		height: 45px;
+	    background: url(../images/css_sprites.png) 0 0;
+	}
+	.contacts .email{
+		min-width: 168px;
+		padding-left: 60px;
+		position: relative;
+		margin-bottom: 35px;
+	}
+	.email:before{
+		content: '';
+		position: absolute;
+		top: calc(50% - 22px);
+		left: 0;
+		width: 45px; 
+		height: 45px;
+	    background: url(../images/css_sprites.png) -45px 0;
+	}
+	.contacts .phones{
+		min-width: 145px;
+		padding-left: 60px;
+		position: relative;
+	}
+	.phones:before{
+		content: '';
+		position: absolute;
+		top: calc(50% - 22px);
+		left: 0;
+		width: 45px; 
+		height: 45px;
+	    background: url(../images/css_sprites.png) -90px 0;
+	}
+	.map{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 10px 0 0 3px;
+	}
+	.soc_menu{
+		position: absolute;
+		z-index: 10;
+		top: calc(100% - 19px);
+   		left: calc(50% - 50px);
+		font-size: 0;
+		
+	}
+	.soc_menu p{
+		color: #ffffff;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.4px;
+		margin-bottom: 12px;
+
+	}
+	.soc_menu li{
+		display: inline-block;
+		font-size: 16px;
+		margin-left: 4px;
+	}
+	.soc_menu a{
+		display: block;
+		width: 32px;
+		height: 32px;
+		background: url(../images/css_sprites.png) -135px 0;
+		border-radius: 50%;
+	}
+	.soc_menu li+li a{
+		background-position: -170px 0;
+	}
+	.soc_menu li+li+li a{
+		background-position: -206px 0;
+	}
+	.soc_menu li:first-child{
+		margin-left: 0;
+	}
+/*footer*/
+	footer{
+		background: #000;
+		text-align: right;
+		padding: 30px 0;
+		
+	}
+	footer p{
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+		font-weight: 300;
+		letter-spacing: 0.12px;
+	}
+/*media*/
+@media screen and (max-width: 1600px){
+	.wrapper{
+		width: 80%;
+	}
+	.shadow_left, .shadow_right, .shadow{
+		display: none;
+	}
+	.about_us h2 {
+	top: 52%;
+	}
+}
+@media screen and (max-width: 1024px){
+	.wrapper{
+		width: 90%;
+	}
+	.decoration{
+		display: none;
+	}
+	header:before{
+		display: none;
+	}
+	header{
+		background: url('../images/1498290979_sportivnyy-klub-sportivnye-sekcii-v-hnure-sekciya-tyazhelaya-atletika.jpg.png') no-repeat center/cover;
+	}
+	.head{
+		background: none;
+	}
+	nav{
+		margin-bottom: 80px;
+	}
+	.gallery:after{
+		border-left: 50vw solid transparent;
+    	border-right: 50vw solid transparent;
+	}
+	.about_us h2 {
+		z-index: 5;
+	    margin: 0 0 0 -40px;
+	}
+	.about_us_gallery{
+		width: 50%;
+	}
+	.first_image{
+		width: 92%;
+	}
+	.additional_images li {
+    margin-right: 0px;
+    width: 33%;
+	}
+	.additional_images img{
+		width: 80%;
+	}
+	.about_us_discription{
+		width: 430px;
+    	margin-left: 0px;
+	}
+	.left_pic{
+		    background: url(../images/Join_1.png) -200px 0;
+	}
+	.group_clases{
+		bottom: 61%;
+	}
+	.week{
+		margin-left: -46px;
+	}
+	.week li{
+		width: 14%;
+		margin: 0;
+	}
+	.timing{
+		width: 50%;
+	}
+	.timing li{
+		width: 45%;
+		margin-right: 15px;
+	}
+	.calendar{
+		margin-left: 65px;
+	}
+	.schedule_bottom h2{
+		margin: 0 0 0 -45px;
+	}
+	.price:before{
+		border-left: 50vw solid transparent;
+    	border-right: 50vw solid transparent;
+	}
+	.box_size{
+		width: 275px;
+	}
+	.team h2{
+		margin-left: 0;
+	}
+	.team_image img{
+		width: 500px;
+	}
+}
+@media screen and (max-width: 768px){
+	.wrapper{
+		width: 100%;
+	}
+	.logo {
+    padding: 35px 0 0 35px;
+	}
+	.bg_text{
+		margin: 60px 0 0 -10px;
+		padding: 0;
+	}
+	.header_text{
+		margin: 150px 39px 0 0;
+	}
+	nav{
+		margin: 0 0 30px 0;
+	}
+	.about_us{
+		padding-bottom: 30px;
+	}
+	.about_us h2{
+		transform: rotate(0);
+		margin: 0 0 30px 0;
+		text-align: center;
+		position: static;
+	}
+	.about_us_gallery{
+		width: 100%;
+    	text-align: center;
+	}
+	.about_us_discription{
+		width: 100%;
+    	text-align: center;
+    	position: relative;
+    	z-index: 5;
+	}
+	.about_us_discription h3{
+		margin: 30px 0 15px 0;
+	}
+	.h2_pos_right {
+    padding-right: 0;
+	}	
+	.gallery_images{
+		width: 75%;
+	}
+	.gallery_main_image{
+		width: 100%;
+	}
+	.gallery h2{
+		margin: 0;
+		position: static;
+    	transform: rotate(0);
+    	text-align: center;
+    	margin-bottom: 30px;
+	}
+	.gallery{
+		padding: 0 0 30px 0;
+	}
+	.gallery:after{
+		display: none;
+	}
+	.h2_pos{
+		padding-left: 0;
+	}
+	.left_pic {
+    background: url(../images/Join_1.png) -290px 0;
+	}
+	.left_pic:before{
+		width: calc(50vw - 150px);
+	}
+	.right_pic:before{
+		width: calc(50vw - 150px);
+	}
+	.group_clases {
+    	top: 390px;
+	}
+	.week{
+		margin: 0;
+	}
+	.schedule h2{
+		position: static;
+	    transform: rotate(0);
+	    text-align: center;
+	    margin: 0 0 30px 0;
+	}
+	.timing{
+		width: 100%;
+	    text-align: center;
+	    margin: 0;
+	    padding: 0;
+	}
+	.timing li{
+		margin: 15px 15px 0;
+	}
+	.calendar{
+		display: none;
+	}
+	.price:before{
+		display: none;
+	}
+	.schedule{
+		padding-bottom: 20px;
+	}
+	.price:after {
+    	display: none;
+    }
+    .price h2{
+    	padding: 30px 0 30px 0;
+    }
+	.box_position{
+		margin: 0 15px 15px 0;
+	}
+	.team h2{
+		position: static;
+	    transform: rotate(0);
+	    text-align: center;
+	    margin: 30px 0;
+	}
+	.text_position{
+		padding-top: 0;
+	}
+	.description{
+		left: calc(50% - 270px);
+	}
+	.team_image{
+		margin: 30px 0;
+	    left: calc(50% - 270px);
+	    top: 0;
+	    position: relative;
+	}
+	.team_image img {
+    width: 100%;
+	}
+	.team .arrow_right {
+    	bottom: 168px;
+    	right: -59px;
+    }
+    .team .arrow_left {
+    	bottom: 168px;
+    	left: -59px;
+    }
+    .team{
+    	padding-bottom: 0;
+    }
+    footer p{
+    	padding-right: 15px;
+    }
+    .fixed_button{
+    	display: none;
+    }
+}
+@media screen and (max-width: 730px){
+	.form_box{
+		width: 100%;
+	}
+	.form_box:before{
+		display: none;
+	}
+	.form textarea{
+		width: 80%;
+
+	}
+}
+@media screen and (max-width: 425px){
+	.bg_text, .header_text{
+		float: none;
+    	margin: 0 auto;
+	}
+	.header_text{
+		text-align: center;
+	}
+	.header_button{
+		margin: 25px 0;
+    	float: none;
+    	display: inline-block;
+	}
+	nav{
+		width: 100%;
+		text-align: center;
+	}
+	nav li{
+		margin-right: 0;
+	    border-right: 1px solid #fff;
+	    padding: 0 5px;
+	}
+	nav li:last-child{
+		border: none;
+	}
+	.about_us p{
+		width: 100%;
+	}
+	.left_pic, .right_pic{
+		display: none;
+	}
+	.schedule_text{
+		margin: 0;
+    	padding: 15px;
+	}
+	.group_clases {
+    top: 210px;
+	}
+	.schedule_top{
+		display: block;
+	}
+	.week li{
+		width: 25%;
+		margin-bottom: 10px;
+	}
+	.timing li{
+		width: 75%;
+	}
+	.box_position{
+		margin-right: 0;
+	}
+	.description{
+		width: 100%;
+   		position: static;
+   		text-align: center;
+	}
+	.description p{
+		margin-left: 0;
+		width: 100%;
+	}
+	.team_scroll{
+		display: none;
+	}
+	.team_image{
+		width: 100%;
+	    margin: 0;
+	    padding-bottom: 50px;
+	    left: 0;
+	}
+	.team .arrow_left{
+		bottom: 0;
+    	left: 20%;
+	}
+	.team .arrow_right{
+		bottom: 0;
+    	right: 20%;
+	}
+	.team{
+		padding-bottom: 10px;
+	}
+	.description h3{
+		margin-left: 0;
+	}
+	.form_box{
+		padding: 20px 0 40px 0;
+	}
+	.form input[type="text"], .form input[type="email"]{
+		margin: 15px 0 0;
+		width: 75%;
+	}
+	.form textarea{
+		width: 75%;
+	}
+	.contacts{
+		margin: 0;
+	}
+	.map{
+		margin: 15px 0 0;
+	}
+	footer{
+		text-align: center;
+    	padding: 65px 0 20px 0;
+	}
+	footer p{
+		padding: 0;
+	}
+}
+@media screen and (max-width: 375px){
+	.bg_text{
+		background: none;
+		width: 100%;
+		text-align: center;
+	}
+	.bg_text h1, .bg_text p, .header_text p{
+		text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+	}
+	.raleway{
+		padding-left: 0;
+	}
+	.roboto{
+		padding-left: 0;
+	}
+	.about_us:after{
+		display: none;
+	}
+	.gallery h2{
+		margin: 0;
+		padding: 30px 0;
+	}
+	.gallery .arrow_left, .gallery .arrow_right{
+		margin-bottom: 55px;
+	}
+}	
+@media screen and (max-width: 320px){
+	.raleway{
+		font-size: 66px;
+	}
+	header{
+		background: url('../images/1498290979_sportivnyy-klub-sportivnye-sekcii-v-hnure-sekciya-tyazhelaya-atletika.jpg.png') no-repeat center/800px 550px;
+	}
+}
+.fixed_button a{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #af1c1a;
+	position: relative;
+}
+.fixed_button a:before{
+	content: '';
+	position: absolute;
+	top: calc(50% - 10px);
+	left: calc(50% - 16px);
+	width: 30px;
+	height: 30px;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(45deg);
+}
+.fixed_button{
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	z-index: 20;
+}
